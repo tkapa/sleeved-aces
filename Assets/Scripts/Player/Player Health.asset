@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 982f353f4536e6a42a54955bde147a07, type: 3}
   m_Name: Player Health
   m_EditorClassIdentifier: 
+  MaxHealth: 100
+  Health: 100

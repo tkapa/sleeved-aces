@@ -12,9 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df749fb733e6c5d4e8056a2a9d216c26, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  roundStartEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  roundEndEvent:
-    m_PersistentCalls:
-      m_Calls: []
+  round: 23

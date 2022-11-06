@@ -12,7 +12,7 @@ public class PlayerHealthDisplay : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        ChangeHealthValue(playerHealth.Health);
+        ChangeHealthValue(playerHealth.health);
     }
 
     private void OnEnable()

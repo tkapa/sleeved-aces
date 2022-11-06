@@ -5,17 +5,17 @@ using UnityEngine.Events;
 public class PlayerHealthScriptableObject : ScriptableObject
 {
     [SerializeField]
-    private int MaxHealth = 100;
+    private int maxHealth = 100;
 
     [SerializeField]
-    public int Health = 100;
+    public int health = 100;
 
     [System.NonSerialized]
     public UnityEvent<int> healthChangeEvent;
 
     private void OnEnable()
     {
-        Health = MaxHealth;
+        health = maxHealth;
 
         if( healthChangeEvent == null)
             healthChangeEvent = new UnityEvent<int>();
@@ -23,7 +23,7 @@ public class PlayerHealthScriptableObject : ScriptableObject
 
     public void DecreaseHealth(int amount)
     {
-        Health -= amount;
-        healthChangeEvent.Invoke(Health);
+        health -= amount;
+        healthChangeEvent.Invoke(health);
     }
 }
