@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -5,6 +6,9 @@ using UnityEngine.Events;
 public class LevelScriptableObject : ScriptableObject
 {
     public int round = 1;
+
+    public WaypointManager waypointManager;
+    public Material levelMap;
 
     [System.NonSerialized]
     public UnityEvent<int> roundStartEvent;

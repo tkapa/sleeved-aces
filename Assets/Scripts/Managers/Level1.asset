@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df749fb733e6c5d4e8056a2a9d216c26, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  round: 23
+  round: 1
+  waypointManager: {fileID: 126150325422891699, guid: fffb0eb75a275df4388b742add89a765, type: 3}
+  levelMap: {fileID: 2100000, guid: 7c19211599451c44b9b58650d056112a, type: 2}
