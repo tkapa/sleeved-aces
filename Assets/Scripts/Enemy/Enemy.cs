@@ -7,8 +7,11 @@ public class Enemy : MonoBehaviour
 
     private void Awake()
     {
-        var em = gameObject.AddComponent<EnemyMovement>();
-        em.movementSpeed = enemy.speed;
+        if (!enemy.isDebugMode)
+        {
+            var em = gameObject.AddComponent<EnemyMovement>();
+            em.movementSpeed = enemy.speed;
+        }
 
         var rb = gameObject.AddComponent<Rigidbody2D>();
         rb.bodyType = RigidbodyType2D.Kinematic;
